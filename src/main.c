@@ -9,6 +9,7 @@ extern const struct imv_backend imv_backend_libtiff;
 extern const struct imv_backend imv_backend_libjpeg;
 extern const struct imv_backend imv_backend_libnsgif;
 extern const struct imv_backend imv_backend_libheif;
+extern const struct imv_backend imv_backend_mupdf;
 
 int main(int argc, char **argv)
 {
@@ -44,6 +45,10 @@ int main(int argc, char **argv)
 
 #ifdef IMV_BACKEND_LIBHEIF
   imv_install_backend(imv, &imv_backend_libheif);
+#endif
+
+#ifdef IMV_BACKEND_MUPDF
+  imv_install_backend(imv, &imv_backend_mupdf);
 #endif
 
   if (!imv_load_config(imv)) {

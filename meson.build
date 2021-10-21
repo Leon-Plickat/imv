@@ -116,6 +116,7 @@ foreach backend : [
   ['librsvg', 'dependency', 'librsvg-2.0', '>= 2.44'],
   ['libnsgif', 'dependency', 'libnsgif', []],
   ['libheif', 'dependency', 'libheif', []],
+  ['mupdf', 'library', 'mupdf', []],
 ]
   _backend_name = backend[0]
   _dep_type = backend[1]

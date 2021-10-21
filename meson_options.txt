@@ -81,3 +81,11 @@ option('libheif',
   type : 'feature',
   description : 'provides: heif'
 )
+
+# mupdf https://mupdf.com
+# depends: libmupdf
+# license: AGPLv3
+option('mupdf',
+  type : 'feature',
+  description : 'provides: pdf'
+)
